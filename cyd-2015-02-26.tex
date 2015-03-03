@@ -1,0 +1,70 @@
+% -*- compile-command: "pdflatex cyd-2015-02-26.tex"; eval: (compile-on-save-mode) -*-
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+
+\begin{document}
+\section{CYD-poolens styrelsemöte 2014-02-05}
+
+\def\arraystretch{1.3}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill} }l c r}
+Närvarande & Ämbete & Funktion \\
+\hline\\[-0.4cm]
+Kristina Arkad & Teknisk chef ISY & Ordförande\\
+Christian Luckey & Systemadministratör & Sekreterare\\
+Hans-Filip Elo & Systemadministratör & Justerare\\
+Therese Alenvret & Chefsbyråkrat, Y-sektionen & Justerare\\
+Alf Segersäll & Chef LiU-IT kvarter Valla nord & Ledamot\\
+Victor Näslund & Systemadministratör & Ledamot\\[2cm]
+\end{tabular*}
+
+
+\begin{enumerate}
+\item Mötets öppnande.
+\item Eventuella adjungeringar till mötet.
+\item Christian Luckey valdes till sekreterare Hans-Filip Elo samt Therese Alenvret och till justerare.
+\item Dagordningen godkändes
+\item Föregående protokoll
+  \begin{itemize}
+  \item Luftmiljön ansågs inte ha förbättrats till den grad som efterfrågades vid förra styrelsemötet enligt en undersökning av arbetsmiljöombudet på Y-sektionen. Detta trots den temperatursänkning som satts i effekt. Alf tog på sig att göra en gemensam kommunikation från alla studentdrivna datorsalar till Akademiska hus om möjligheten att göra mätningar på koldioxidnivån i dessa; detta då det var speciellt denna aspekt som ansågs bristande.
+  \item Skrivardatorn har äntligen satts upp.
+  \end{itemize}
+\item Verksamhetsberättlse
+  \begin{itemize}
+  \item Studentorganisationernas hemsidor har flyttats från det gamla systemet med organisationskonton till att logga in med sina studentkonton för att administrera sidor.
+  \item Ett automatiserat system för installation och uppgradering av wordpressidor har tagits fram då studentorganisationer i stor utsträckning önskar använda wordpress som bas för sina hemsidor.
+  \item Vi förbereder för flytten till Linux. Vi har satt upp Foreman som använder puppet för inställningsynkronisering och automatisk installation för både serverar och datorerna ute i salen.
+  \item Nya 24''-skärmar har placerats ut i datorsalen.
+  \item En ny modern hemsida för CYD har tagits fram och står inom kort redo att rullas ut.
+  \item Kablarna under bordet har hängts upp från golvet med kardborreband.
+  \item Y-LAN har satt upp sin nya sida i, Lingsektionen har flyttat in sin gamla sida i, och Donna samt D-sektionen har nya betasidor uppe i CYD-poolens nyutvecklade automagiska wordpressmiljö.
+  \end{itemize}
+
+\item CYD-poolens stadgar.
+
+Styrelsen tog sig tid att läsa igenom de potentiella nya stadgarna.
+
+De fann dels att lägga till ett stycke under kapitel 1.3.5 att majoritet krävs för beslut. Vidare under 1.3.5 läggs till att frågan bordlägges till nästa möte vid lika rösttal. Vidare under kapitel 1.4.2 att ändringar i stadga kräver bifall från två efter varandra följande möten, separerade av minst en månad.
+
+Styrelsen fann att efter dessa modifikationer förts till stadgarna till nästa möte gå till beslut om införandet av stadgarna.
+
+\item Övriga frågor.
+  \begin{itemize}
+    \item Städningen har inte sköts under tenta-p. Kristina Arkad kollar upp detta med lokalvårdarna.
+  \end{itemize}
+\item Mötet avslutas.
+\end{enumerate}
+
+\section{Bilagor}
+På nästa sida kommer ni se användningsstatistiken för CYD-poolen för de perioder systemet varit i bruk. Värt att notera är att December, Januari och Februari inte är kompletta månader dels p.g.a. juluppehållet och dels p.g.a. mötet utfördes innan slutet på februari månad.
+
+Vidare kan det vara intressant att veta att totalt ~2900 elever har tillgång till CYD-poolen. I och med det kan vi dra slutsatsen att under en normal månad besöker över hälften av samtliga elever vid D- och Y-sektionen samt Di- och Ei-programmet och behöriga masterprogram CYD-poolens datorsal.
+
+\includepdf{statistik.pdf}
+\includepdf[pages={-}]{stadgar.pdf}
+
+\end{document}
